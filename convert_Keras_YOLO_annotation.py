@@ -31,7 +31,7 @@ with open(data_filename, "r") as f:
         annotations = read_data.split(' ')[1:]
 
         img = cv2.imread(img_name)
-        width, height, channel = img.shape
+        height, width, channel = img.shape
 
         str_to_write = ""
         for i in range (0, len(annotations)):#here we browse all videos
